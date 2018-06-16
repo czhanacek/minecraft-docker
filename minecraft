@@ -6,8 +6,8 @@ MINECRAFT_SRC="/usr/src/minecraft"
 MINECRAFT_VERSION=${MINECRAFT_VERSION:-1.8.8}
 MINECRAFT_JAR=${MINECRAFT_JAR:-"minecraft_server.$MINECRAFT_VERSION.jar"}
 MINECRAFT_STARTUP_JAR=${MINECRAFT_STARTUP_JAR:-"$MINECRAFT_JAR"}
-MINECRAFT_SERVER_URL="https://s3.amazonaws.com/Minecraft.Download/versions/$MINECRAFT_VERSION/$MINECRAFT_JAR"
-MINECRAFT_OPTS=${MINECRAFT_OPTS:-"-server -Xmx1024m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC"}
+MINECRAFT_SERVER_URL="https://launcher.mojang.com/mc/game/1.12.2/server/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar"
+MINECRAFT_OPTS=${MINECRAFT_OPTS:-"-Xmx1024m"}
 
 check_env() {
     # Agree to EULA.
